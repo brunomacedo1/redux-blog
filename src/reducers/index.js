@@ -1,6 +1,9 @@
 import { combineReducers } from 'redux';
+import postsReducer from './postsReducer';
+import usersReducer from './usersReducer'
 
+//Produz os states
 export default combineReducers({
-  //dummy reducer
-  replaceMe: () => 'trick redux to have valid reducer'
+  posts: postsReducer,
+  users: usersReducer
 });
